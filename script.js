@@ -19,7 +19,7 @@ function playSound(e) {
 var keys = Array.from(document.querySelectorAll('.key'));
 
 keys.forEach(function(key) {
-    key.addEventListener('‘transitionend’', removeTransition);
+    key.addEventListener('transitionend', removeTransition);
 });
 
 window.addEventListener('keydown', playSound);
